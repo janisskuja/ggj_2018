@@ -45,7 +45,6 @@ public class Generator : MonoBehaviour
                     targetX = Random.Range(xMin + TargetDistanceFromSides, xMax - TargetDistanceFromSides);
                     targetZ = Random.Range(zMin + TargetDistanceFromSides, zMax - TargetDistanceFromSides);
                     tryCount++;
-                    Debug.Log(targetX + " fail ");
                     if (tryCount > 50)
                     {
                         break;
@@ -56,6 +55,8 @@ public class Generator : MonoBehaviour
 
             var target = Instantiate(TargetPrefab);
             var targetRed = Instantiate(TargetPrefab);
+            target.GetComponent<Target>().TeamBlue = true;
+            targetRed.GetComponent<Target>().TeamBlue = false;
             target.transform.position = targetPos;
             targetRed.transform.position = -target.transform.position;
 
