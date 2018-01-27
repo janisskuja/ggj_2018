@@ -13,7 +13,7 @@ public class AudioManager : MonoBehaviour {
 	public AudioClip PickupSound1;
 	public AudioClip PickupSound2;
 	public AudioClip PickupSound3;
-
+	public AudioClip PickupSound4;
 
 
 	//public AudioSource MainSoundSource;
@@ -74,10 +74,11 @@ public class AudioManager : MonoBehaviour {
 	private void SetPowerUpSource() {
 		//PowerPickupSource.GetComponent<AudioSource> ().clip = PowerUpSound;
 
-		PickUPSoundArray = new AudioClip[3];
+		PickUPSoundArray = new AudioClip[4];
 		PickUPSoundArray [0] = PickupSound1;
 		PickUPSoundArray [1] = PickupSound2;
 		PickUPSoundArray [2] = PickupSound3;
+		PickUPSoundArray [3] = PickupSound4;
 	}
 
 

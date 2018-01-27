@@ -553,7 +553,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -633,7 +633,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 0.3
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -718,9 +718,10 @@ MonoBehaviour:
   PickUPSoundArray: []
   VictorySound: {fileID: 0}
   ButtonClickSound: {fileID: 8300000, guid: c8527ac65d57749e1973b3dd71ce7225, type: 3}
-  PickupSound1: {fileID: 0}
-  PickupSound2: {fileID: 0}
-  PickupSound3: {fileID: 0}
+  PickupSound1: {fileID: 8300000, guid: 85927f998e24442c7b3c6aad737ff5fa, type: 3}
+  PickupSound2: {fileID: 8300000, guid: ebaf4dda562ac4e83a6c0c7705908b40, type: 3}
+  PickupSound3: {fileID: 8300000, guid: 85927f998e24442c7b3c6aad737ff5fa, type: 3}
+  PickupSound4: {fileID: 8300000, guid: ebaf4dda562ac4e83a6c0c7705908b40, type: 3}
   ButtonClickSource: {fileID: 0}
   Background: {fileID: 1142832757737822}
   MainMenuBackground: {fileID: 1117390123810276}

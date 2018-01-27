@@ -196,19 +196,9 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 114333497941994140, guid: 583aa511f7a1a4695a2159e5318dc40f,
         type: 2}
-      propertyPath: PickupSound1
-      value: 
-      objectReference: {fileID: 8300000, guid: 85927f998e24442c7b3c6aad737ff5fa, type: 3}
-    - target: {fileID: 114333497941994140, guid: 583aa511f7a1a4695a2159e5318dc40f,
-        type: 2}
-      propertyPath: PickupSound2
-      value: 
-      objectReference: {fileID: 8300000, guid: 85927f998e24442c7b3c6aad737ff5fa, type: 3}
-    - target: {fileID: 114333497941994140, guid: 583aa511f7a1a4695a2159e5318dc40f,
-        type: 2}
-      propertyPath: PickupSound3
-      value: 
-      objectReference: {fileID: 8300000, guid: 85927f998e24442c7b3c6aad737ff5fa, type: 3}
+      propertyPath: IsMainMenu
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 583aa511f7a1a4695a2159e5318dc40f, type: 2}
   m_IsPrefabParent: 0
