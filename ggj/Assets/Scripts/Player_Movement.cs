@@ -25,7 +25,6 @@ public class Player_Movement : MonoBehaviour {
     {
         rb = GetComponent<Rigidbody>();
         if (!team) x_position = x_position * (-1);
-		transform.GetComponent<Renderer> ().material.color = team ? Color.blue : Color.red;
 		audioManager = GameObject.FindGameObjectWithTag("AudioManager").GetComponent<AudioManager>();
     }
 

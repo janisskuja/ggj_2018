@@ -7,9 +7,13 @@ public class AudioManager : MonoBehaviour {
 	public AudioClip MenuBackgroundMusic;
 	public AudioClip ShootSound;
 	public AudioClip HitSound;
+	public AudioClip [] PickUPSoundArray;
 	public AudioClip VictorySound;
 	public AudioClip ButtonClickSound;
-	public AudioClip PowerUpSound;
+	public AudioClip PickupSound1;
+	public AudioClip PickupSound2;
+	public AudioClip PickupSound3;
+
 
 
 	//public AudioSource MainSoundSource;
@@ -64,10 +68,16 @@ public class AudioManager : MonoBehaviour {
 
 	private void SetHitSoundSource() {
 		HitSoundSource.GetComponent<AudioSource> ().clip = HitSound;
+
 	}
 
 	private void SetPowerUpSource() {
-		PowerPickupSource.GetComponent<AudioSource> ().clip = PowerUpSound;
+		//PowerPickupSource.GetComponent<AudioSource> ().clip = PowerUpSound;
+
+		PickUPSoundArray = new AudioClip[3];
+		PickUPSoundArray [0] = PickupSound1;
+		PickUPSoundArray [1] = PickupSound2;
+		PickUPSoundArray [2] = PickupSound3;
 	}
 
 
@@ -75,11 +85,14 @@ public class AudioManager : MonoBehaviour {
 
 
 	public void P1Shoot() {
-		P1ShootSource.Play ();
+		if (P1ShootSource.isPlaying == false) {
+			P1ShootSource.Play (); } 
 	}
 
 	public void P2Shoot() {
-		P2ShootSource.Play ();
+		if (P2ShootSource.isPlaying == false) {
+			P2ShootSource.Play ();
+		}
 	}
 
 	public void GameOverSound() {
@@ -88,10 +101,12 @@ public class AudioManager : MonoBehaviour {
 	}
 
 	public void HitSomething() {
+		HitSoundSource.GetComponent<AudioSource> ().clip = HitSound;
 		HitSoundSource.GetComponent<AudioSource> ().Play();
 	}
 
 	public void PowerUPPickup() {
+		PowerPickupSource.GetComponent<AudioSource> ().clip = PickUPSoundArray[Random.Range(0,2)];
 		PowerPickupSource.GetComponent<AudioSource> ().Play ();
 	}
 

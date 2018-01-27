@@ -17,7 +17,7 @@ public class Target : MonoBehaviour
 		if (other.GetComponent<Bullet>().team && !TeamBlue || !other.GetComponent<Bullet>().team && TeamBlue)
             hits++;
 
-        if (hits > HitCount)
+        if (hits >= HitCount)
         {
             Destroy(gameObject);
 

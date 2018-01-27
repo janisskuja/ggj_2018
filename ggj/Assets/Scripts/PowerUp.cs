@@ -20,8 +20,11 @@ public class PowerUp : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.GetComponent<Bullet>().team && TeamBlue || !other.GetComponent<Bullet>().team && !TeamBlue)
-            hits++;
+		Bullet bullet = other.GetComponent<Bullet> ();
+		if (bullet.team && TeamBlue || !bullet.team && !TeamBlue) {
+			bullet.setPowered ();
+			hits++;
+		}
 
         if (hits >= HitCount)
         {

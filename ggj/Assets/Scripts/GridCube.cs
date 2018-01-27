@@ -14,8 +14,13 @@ public class GridCube : MonoBehaviour {
 
 	void OnTriggerEnter (Collider other) {
 		bool tmpBlue = isBlue;
-		isBlue = other.gameObject.GetComponent<Bullet>().team;
+		Bullet bullet = other.gameObject.GetComponent<Bullet> ();
+		isBlue = bullet.team;
 		if (tmpBlue != isBlue) {
+			if (bullet.isPowered) {
+				bullet.startPowerUp ();
+				return;
+			}
 			Destroy (other.gameObject);
 		}
 	}
