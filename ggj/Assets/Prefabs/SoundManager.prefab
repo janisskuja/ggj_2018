@@ -712,12 +712,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   BackgroundMusic: {fileID: 8300000, guid: a7187a42990bc447480f86736487965a, type: 3}
-  MenuBackgroundMusic: {fileID: 0}
+  MenuBackgroundMusic: {fileID: 8300000, guid: acfd29e84b69c4a7ca29edc53e35c2d7, type: 3}
   ShootSound: {fileID: 8300000, guid: 6e4c0426f5df8477faa4f13715557eb5, type: 3}
   HitSound: {fileID: 8300000, guid: 09e6b8843270f4c53b97b83789feb68c, type: 3}
+  PickUPSoundArray: []
   VictorySound: {fileID: 0}
   ButtonClickSound: {fileID: 8300000, guid: c8527ac65d57749e1973b3dd71ce7225, type: 3}
-  PowerUpSound: {fileID: 8300000, guid: b32a110e451494d85b8e173b148e69bc, type: 3}
+  PickupSound1: {fileID: 0}
+  PickupSound2: {fileID: 0}
+  PickupSound3: {fileID: 0}
   ButtonClickSource: {fileID: 0}
   Background: {fileID: 1142832757737822}
   MainMenuBackground: {fileID: 1117390123810276}
@@ -725,4 +728,4 @@ MonoBehaviour:
   P2: {fileID: 1079006788954114}
   HitSoundSource: {fileID: 1910340246503656}
   PowerPickupSource: {fileID: 1800045915961318}
-  IsMainMenu: 0
+  IsMainMenu: 1

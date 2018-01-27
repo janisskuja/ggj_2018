@@ -17,8 +17,6 @@ public class CameraMovement : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-        
-
        
     }
 

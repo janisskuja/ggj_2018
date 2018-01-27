@@ -6,6 +6,6 @@ public class StartGame : MonoBehaviour {
       
 	public void GameStart()
     {
-        Application.LoadLevel("Main");
+        Application.LoadLevel("Main 1");
     }
 }
