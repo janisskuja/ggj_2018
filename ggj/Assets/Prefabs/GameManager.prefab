@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 114109023792198546}
   m_Layer: 0
   m_Name: GameManager
-  m_TagString: Untagged
+  m_TagString: GameManager
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -51,6 +51,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7bda93d07cf14c3cbf259923ef31827, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TileCountX: 10
-  TileCountZ: 10
+  TileCountX: 40
+  TileCountZ: 40
   TilePrefab: {fileID: 1808771071771004, guid: 019b367b5627e4bcc8345cc2eb1f5c0c, type: 2}
+  TargetCount: 20
+  TargetPrefab: {fileID: 1404792466328662, guid: b65a70d0e98f5c5499c268e4eb6d4c37,
+    type: 2}
+  TargetMinSpreadDistance: 1.5
+  TargetDistanceFromSides: 1.5
+  blueRewapawnRate: 1
+  redRewapawnRate: 1
+  redScore: 0
+  blueScore: 0
+  PowerUpPrefab: {fileID: 1782210139575840, guid: 55ea6aee14f8e4fed87327b7dcd064fa,
+    type: 2}

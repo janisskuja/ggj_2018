@@ -452,6 +452,12 @@ Prefab:
       propertyPath: TargetDistanceFromSides
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 114109023792198546, guid: 5cfa16ea14ab64d60bda6f65b01bd13c,
+        type: 2}
+      propertyPath: PowerUpPrefab
+      value: 
+      objectReference: {fileID: 1782210139575840, guid: 55ea6aee14f8e4fed87327b7dcd064fa,
+        type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5cfa16ea14ab64d60bda6f65b01bd13c, type: 2}
   m_IsPrefabParent: 0
