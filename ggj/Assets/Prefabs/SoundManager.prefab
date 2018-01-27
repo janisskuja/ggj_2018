@@ -716,12 +716,12 @@ MonoBehaviour:
   ShootSound: {fileID: 8300000, guid: 6e4c0426f5df8477faa4f13715557eb5, type: 3}
   HitSound: {fileID: 8300000, guid: 09e6b8843270f4c53b97b83789feb68c, type: 3}
   PickUPSoundArray: []
-  VictorySound: {fileID: 0}
+  VictorySound: {fileID: 8300000, guid: f4890e41b5c4e4f00b3560f69a16d9f3, type: 3}
   ButtonClickSound: {fileID: 8300000, guid: c8527ac65d57749e1973b3dd71ce7225, type: 3}
-  PickupSound1: {fileID: 8300000, guid: 85927f998e24442c7b3c6aad737ff5fa, type: 3}
-  PickupSound2: {fileID: 8300000, guid: ebaf4dda562ac4e83a6c0c7705908b40, type: 3}
-  PickupSound3: {fileID: 8300000, guid: 85927f998e24442c7b3c6aad737ff5fa, type: 3}
-  PickupSound4: {fileID: 8300000, guid: ebaf4dda562ac4e83a6c0c7705908b40, type: 3}
+  PickupSound1: {fileID: 8300000, guid: ebaf4dda562ac4e83a6c0c7705908b40, type: 3}
+  PickupSound2: {fileID: 8300000, guid: 80e4edb9d78504ae9a2c7f0bd4f5e634, type: 3}
+  PickupSound3: {fileID: 8300000, guid: 768cdb47d04aa4f9bbf972e7c4e3bf28, type: 3}
+  PickupSound4: {fileID: 8300000, guid: 037f1b3ab606f40038e7a85ad609161d, type: 3}
   ButtonClickSource: {fileID: 0}
   Background: {fileID: 1142832757737822}
   MainMenuBackground: {fileID: 1117390123810276}
@@ -729,4 +729,4 @@ MonoBehaviour:
   P2: {fileID: 1079006788954114}
   HitSoundSource: {fileID: 1910340246503656}
   PowerPickupSource: {fileID: 1800045915961318}
-  IsMainMenu: 1
+  IsMainMenu: 0

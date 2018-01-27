@@ -96,9 +96,9 @@ public class AudioManager : MonoBehaviour {
 		}
 	}
 
-	public void GameOverSound() {
-		Background.GetComponent<AudioSource> ().clip = VictorySound;
-		Background.GetComponent<AudioSource>().Play ();
+	public void GameStartSound() {
+		HitSoundSource.GetComponent<AudioSource> ().clip = VictorySound;
+		HitSoundSource.GetComponent<AudioSource>().Play ();
 	}
 
 	public void HitSomething() {

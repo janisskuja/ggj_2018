@@ -12,11 +12,15 @@ public class GameState : MonoBehaviour {
 	public int redScore = 0;
 	public int blueScore = 0;
 
+	private AudioManager audioManager;
+
 	// Use this for initialization
 	void Start () {
 		timerText = GameObject.FindGameObjectWithTag ("GameTime").GetComponent<Text>();
 		blueScoreText = GameObject.FindGameObjectWithTag ("BlueScore").GetComponent<Text>();
 		redScoreText = GameObject.FindGameObjectWithTag ("RedScore").GetComponent<Text>();
+		audioManager = GameObject.FindGameObjectWithTag("AudioManager").GetComponent<AudioManager>();
+		audioManager.GameStartSound ();
 	}
 	
 	// Update is called once per frame
