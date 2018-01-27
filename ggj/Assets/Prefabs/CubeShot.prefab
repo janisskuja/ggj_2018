@@ -189,9 +189,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6dfb18983bb3a44db99403c879c68e0b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 30
-  team: 1
-  strayFactor: 0.5
-  powerUpTimer: 0.02
+  speed: 40
+  team: 0
+  strayFactor: 2
+  powerUpTimer: 0.05
   isPowered: 0
   timerStarted: 0
