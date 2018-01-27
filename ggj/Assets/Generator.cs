@@ -33,7 +33,7 @@ public class Generator : MonoBehaviour
         var tryCount = 0;
         for (var i = 0; i < TargetCount; i++)
         {
-            var targetX =  Random.Range(xMin + TargetDistanceFromSides, xMax - TargetDistanceFromSides);
+            var targetX =  Random.Range(0 + TargetDistanceFromSides, xMax - TargetDistanceFromSides);
             var targetZ =  Random.Range(zMin + TargetDistanceFromSides, zMax - TargetDistanceFromSides);
             if (spawnedTargets.Any())
                 while (spawnedTargets.FirstOrDefault(t =>
@@ -42,7 +42,7 @@ public class Generator : MonoBehaviour
                     || t.z < targetZ + TargetMinSpreadDistance
                     && t.z > targetZ - TargetMinSpreadDistance) != Vector3.zero)
                 {
-                    targetX = Random.Range(xMin + TargetDistanceFromSides, xMax - TargetDistanceFromSides);
+                    targetX = Random.Range(0 + TargetDistanceFromSides, xMax - TargetDistanceFromSides);
                     targetZ = Random.Range(zMin + TargetDistanceFromSides, zMax - TargetDistanceFromSides);
                     tryCount++;
                     if (tryCount > 50)
