@@ -176,9 +176,9 @@ MonoBehaviour:
   m_Script: {fileID: 1077351063, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_HorizontalAxis: Horizontal
-  m_VerticalAxis: Vertical
-  m_SubmitButton: Submit
+  m_HorizontalAxis: Horizontal1
+  m_VerticalAxis: Vertical1
+  m_SubmitButton: Fire1
   m_CancelButton: Cancel
   m_InputActionsPerSecond: 10
   m_RepeatDelay: 0.5
@@ -277,7 +277,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 00:59
+  m_Text: 
 --- !u!222 &145622301
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -990,6 +990,28 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5cfa16ea14ab64d60bda6f65b01bd13c, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1940857694 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1477144119288530, guid: 5cfa16ea14ab64d60bda6f65b01bd13c,
+    type: 2}
+  m_PrefabInternal: {fileID: 1702853687}
+--- !u!114 &1940857695
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1940857694}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a843b0edf97c044d2b06a54b805f0542, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timer: 61
+  timerText: {fileID: 0}
+  blueScoreText: {fileID: 0}
+  redScoreText: {fileID: 0}
+  redScore: 0
+  blueScore: 0
 --- !u!1 &2067166073
 GameObject:
   m_ObjectHideFlags: 0

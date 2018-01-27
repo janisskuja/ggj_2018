@@ -7,21 +7,27 @@ public class Target : MonoBehaviour
     public int HitCount = 1;
     public bool TeamBlue;
     private int hits = 0;
+	public GameState gameState;
 
 	void Start() {
 		transform.GetComponent<Renderer> ().material.color = TeamBlue ? Color.white : Color.black;
+		gameState = GameObject.FindGameObjectWithTag ("GameManager").GetComponent<GameState> ();
 	}
 
     void OnTriggerEnter(Collider other)
     {
-		if (other.GetComponent<Bullet>().team && !TeamBlue || !other.GetComponent<Bullet>().team && TeamBlue)
+		Bullet bullet = other.GetComponent<Bullet> ();
+		if (bullet.team && !TeamBlue || !bullet.team && TeamBlue)
             hits++;
 
         if (hits >= HitCount)
         {
-            Destroy(gameObject);
-
-            Debug.Log(" dest");
+			if (bullet.team) {
+				gameState.blueScore += 500;
+			} else {
+				gameState.redScore += 500;
+			}
+			Destroy (gameObject);
         }
         //todo increase score
     }
