@@ -13,6 +13,10 @@ public class GridCube : MonoBehaviour {
 	}
 
 	void OnTriggerEnter (Collider other) {
+		bool tmpBlue = isBlue;
 		isBlue = other.gameObject.GetComponent<Bullet>().team;
+		if (tmpBlue != isBlue) {
+			Destroy (other.gameObject);
+		}
 	}
 }

@@ -33,7 +33,7 @@ public class Player_Movement : MonoBehaviour {
         {
             nextFire = Time.time + fireRate;
             shot.team = team;
-            Instantiate(shot, transform.position, transform.rotation);
+			Instantiate(shot, new Vector3(transform.position.x, 3f, transform.position.z), transform.rotation);
         }
     }
 
