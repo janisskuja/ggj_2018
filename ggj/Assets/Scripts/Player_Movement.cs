@@ -30,7 +30,7 @@ public class Player_Movement : MonoBehaviour {
 
     private void Update()
     {
-		string fire = team ? "Fire1" : "Fire2";
+		string fire = !team ? "Fire1" : "Fire2";
 		if (Input.GetButton(fire) && Time.time > nextFire)
         {
             nextFire = Time.time + fireRate;

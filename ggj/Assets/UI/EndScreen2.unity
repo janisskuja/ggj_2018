@@ -750,7 +750,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 12800000, guid: e33ca42463e3cd746828cc5b0ce8ac81, type: 3}
+    m_Font: {fileID: 12800000, guid: 57b2ffa7f4a4f49f3afea62b53d5c66c, type: 3}
     m_FontSize: 30
     m_FontStyle: 0
     m_BestFit: 0
@@ -762,7 +762,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Player x won!
+  m_Text: Red player won!
 --- !u!222 &798538866
 CanvasRenderer:
   m_ObjectHideFlags: 0
