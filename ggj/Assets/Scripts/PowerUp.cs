@@ -13,7 +13,6 @@ public class PowerUp : MonoBehaviour
  
 
     void Start()  {
-        transform.GetComponent<Renderer>().material.color = TeamBlue ? Color.magenta : Color.green;
 		audioManager = GameObject.FindGameObjectWithTag("AudioManager").GetComponent<AudioManager>();
     }
 
@@ -21,10 +20,10 @@ public class PowerUp : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
 		Bullet bullet = other.GetComponent<Bullet> ();
-		if (bullet.team && TeamBlue || !bullet.team && !TeamBlue) {
+//		if (bullet.team && TeamBlue || !bullet.team && !TeamBlue) {
 			bullet.setPowered ();
 			hits++;
-		}
+//		}
 
         if (hits >= HitCount)
         {

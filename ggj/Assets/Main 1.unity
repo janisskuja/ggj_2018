@@ -518,6 +518,11 @@ Prefab:
       propertyPath: BackgroundMusic
       value: 
       objectReference: {fileID: 8300000, guid: 1036d0a589d7e407aaebf9901f044f17, type: 3}
+    - target: {fileID: 114333497941994140, guid: 583aa511f7a1a4695a2159e5318dc40f,
+        type: 2}
+      propertyPath: BoomSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 2f258048aac134ff5a373fa0bd8af2f0, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 583aa511f7a1a4695a2159e5318dc40f, type: 2}
   m_IsPrefabParent: 0
@@ -997,31 +1002,14 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 114109023792198546, guid: 5cfa16ea14ab64d60bda6f65b01bd13c,
+        type: 2}
+      propertyPath: TargetCount
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5cfa16ea14ab64d60bda6f65b01bd13c, type: 2}
   m_IsPrefabParent: 0
---- !u!1 &1940857694 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1477144119288530, guid: 5cfa16ea14ab64d60bda6f65b01bd13c,
-    type: 2}
-  m_PrefabInternal: {fileID: 1702853687}
---- !u!114 &1940857695
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1940857694}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a843b0edf97c044d2b06a54b805f0542, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  timer: 120
-  timerText: {fileID: 0}
-  blueScoreText: {fileID: 0}
-  redScoreText: {fileID: 0}
-  redScore: 0
-  blueScore: 0
 --- !u!1 &2067166073
 GameObject:
   m_ObjectHideFlags: 0

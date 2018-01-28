@@ -7,6 +7,7 @@ public class AudioManager : MonoBehaviour {
 	public AudioClip MenuBackgroundMusic;
 	public AudioClip ShootSound;
 	public AudioClip HitSound;
+	public AudioClip BoomSound;
 	public AudioClip [] PickUPSoundArray;
 	public AudioClip VictorySound;
 	public AudioClip ButtonClickSound;
@@ -109,6 +110,11 @@ public class AudioManager : MonoBehaviour {
 	public void PowerUPPickup() {
 		PowerPickupSource.GetComponent<AudioSource> ().clip = PickUPSoundArray[Random.Range(0,2)];
 		PowerPickupSource.GetComponent<AudioSource> ().Play ();
+	}
+
+	public void Boom() {
+		HitSoundSource.GetComponent<AudioSource> ().clip = BoomSound;
+		HitSoundSource.GetComponent<AudioSource> ().Play();
 	}
 
 

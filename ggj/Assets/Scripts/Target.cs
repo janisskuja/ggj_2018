@@ -9,8 +9,10 @@ public class Target : MonoBehaviour
     private int hits = 0;
 	public GameState gameState;
 
-	void Start() {
-		transform.GetComponent<Renderer> ().material.color = TeamBlue ? Color.white : Color.black;
+	private AudioManager audioManager;
+
+	void Start()  {
+		audioManager = GameObject.FindGameObjectWithTag("AudioManager").GetComponent<AudioManager>();
 		gameState = GameObject.FindGameObjectWithTag ("GameManager").GetComponent<GameState> ();
 	}
 
@@ -27,6 +29,7 @@ public class Target : MonoBehaviour
 			} else {
 				gameState.redScore += 500;
 			}
+			audioManager.Boom();
 			Destroy (gameObject);
         }
         //todo increase score

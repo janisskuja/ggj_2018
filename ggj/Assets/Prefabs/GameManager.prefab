@@ -20,6 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4068339544336398}
   - component: {fileID: 114109023792198546}
+  - component: {fileID: 114749992509772694}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: GameManager
@@ -55,7 +56,9 @@ MonoBehaviour:
   TileCountZ: 40
   TilePrefab: {fileID: 1808771071771004, guid: 019b367b5627e4bcc8345cc2eb1f5c0c, type: 2}
   TargetCount: 20
-  TargetPrefab: {fileID: 1404792466328662, guid: b65a70d0e98f5c5499c268e4eb6d4c37,
+  RedTargetPrefab: {fileID: 1549001456585596, guid: 6c5e9f9cf72894916b44381e6d8a0928,
+    type: 2}
+  BlueTargetPrefab: {fileID: 1698012627334204, guid: 595c614e1cf5e49bba45ffdc281fa149,
     type: 2}
   TargetMinSpreadDistance: 1.5
   TargetDistanceFromSides: 1.5
@@ -63,5 +66,22 @@ MonoBehaviour:
   redRewapawnRate: 1
   redScore: 0
   blueScore: 0
-  PowerUpPrefab: {fileID: 1782210139575840, guid: 55ea6aee14f8e4fed87327b7dcd064fa,
+  PowerUpPrefab: {fileID: 1666391572051046, guid: 7d830d68f56e8478795229f886dc5925,
     type: 2}
+--- !u!114 &114749992509772694
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1477144119288530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a843b0edf97c044d2b06a54b805f0542, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timer: 120
+  timerText: {fileID: 0}
+  blueScoreText: {fileID: 0}
+  redScoreText: {fileID: 0}
+  redScore: 0
+  blueScore: 0

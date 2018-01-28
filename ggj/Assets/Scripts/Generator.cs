@@ -11,7 +11,8 @@ public class Generator : MonoBehaviour
     public int TileCountZ;
     public GameObject TilePrefab;
     public int TargetCount;
-    public GameObject TargetPrefab;
+    public GameObject RedTargetPrefab;
+	public GameObject BlueTargetPrefab;
     public float TargetMinSpreadDistance;
     public float TargetDistanceFromSides;
     public float blueRewapawnRate;
@@ -70,15 +71,15 @@ public class Generator : MonoBehaviour
                         break;
                     }
                 }
-            var targetPos = new Vector3(targetX, 0, targetZ);
-            spawnedTargets.Add(targetPos);
+            var blueTargetPos = new Vector3(targetX, 2, targetZ);
+			var redTargetPos = new Vector3(-targetX, 2, targetZ);
+			spawnedTargets.Add(blueTargetPos);
+			spawnedTargets.Add(redTargetPos);
 
-            var target = Instantiate(TargetPrefab);
-            var targetRed = Instantiate(TargetPrefab);
+			var target = Instantiate(BlueTargetPrefab, blueTargetPos, Quaternion.identity);
+			var targetRed = Instantiate(RedTargetPrefab, redTargetPos, Quaternion.identity);
             target.GetComponent<Target>().TeamBlue = true;
             targetRed.GetComponent<Target>().TeamBlue = false;
-            target.transform.position = targetPos;
-            targetRed.transform.position = -target.transform.position;
 
         }
     }
@@ -111,10 +112,9 @@ public class Generator : MonoBehaviour
         {     
 	        var powerUpX = Random.Range(0 + TargetDistanceFromSides, xMax - TargetDistanceFromSides);
 	        var powerUpZ = Random.Range(zMin + TargetDistanceFromSides, zMax - TargetDistanceFromSides);
-	        var powerUpPos = new Vector3(powerUpX, 0, powerUpZ);
-	        var powerUp = Instantiate(PowerUpPrefab);
+	        var powerUpPos = new Vector3(powerUpX, 2, powerUpZ);
+			var powerUp = Instantiate(PowerUpPrefab, powerUpPos, Quaternion.identity);
 	        powerUp.GetComponent<PowerUp>().TeamBlue = true;
-	        powerUp.transform.position = powerUpPos;
 	        powerUpBlueNeeded = false;
         }
 
@@ -122,10 +122,9 @@ public class Generator : MonoBehaviour
         {
             var powerUpX = Random.Range(0 + TargetDistanceFromSides, xMax - TargetDistanceFromSides);
             var powerUpZ = Random.Range(zMin + TargetDistanceFromSides, zMax - TargetDistanceFromSides);
-            var powerUpPos = new Vector3(-powerUpX, 0, powerUpZ);
-            var powerUpRed = Instantiate(PowerUpPrefab);
+            var powerUpPos = new Vector3(-powerUpX, 2, powerUpZ);
+			var powerUpRed = Instantiate(PowerUpPrefab, powerUpPos, Quaternion.identity);
             powerUpRed.GetComponent<PowerUp>().TeamBlue = false;
-            powerUpRed.transform.position = powerUpPos;
             powerUpRedNeeded = false;
         }
     }
