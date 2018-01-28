@@ -98,8 +98,8 @@ public class AudioManager : MonoBehaviour {
 	}
 
 	public void GameStartSound() {
-		HitSoundSource.GetComponent<AudioSource> ().clip = VictorySound;
-		HitSoundSource.GetComponent<AudioSource>().Play ();
+		PowerPickupSource.GetComponent<AudioSource> ().clip = VictorySound;
+		PowerPickupSource.GetComponent<AudioSource>().Play ();
 	}
 
 	public void HitSomething() {
