@@ -43,7 +43,7 @@ RenderSettings:
 LightmapSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 11
-  m_GIWorkflowMode: 0
+  m_GIWorkflowMode: 1
   m_GISettings:
     serializedVersion: 2
     m_BounceScale: 1
@@ -89,7 +89,8 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaIndirect: 2
     m_PVRFilteringAtrousPositionSigmaAO: 1
     m_ShowResolutionOverlay: 1
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000002, guid: 4c555b96e6aa341569ccea7f0d36e819,
+    type: 2}
   m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
@@ -523,6 +524,21 @@ Prefab:
       propertyPath: BoomSound
       value: 
       objectReference: {fileID: 8300000, guid: 2f258048aac134ff5a373fa0bd8af2f0, type: 3}
+    - target: {fileID: 82166060265376360, guid: 583aa511f7a1a4695a2159e5318dc40f,
+        type: 2}
+      propertyPath: m_Volume
+      value: 0.35
+      objectReference: {fileID: 0}
+    - target: {fileID: 82231857094064028, guid: 583aa511f7a1a4695a2159e5318dc40f,
+        type: 2}
+      propertyPath: m_Volume
+      value: 0.35
+      objectReference: {fileID: 0}
+    - target: {fileID: 82923982944236964, guid: 583aa511f7a1a4695a2159e5318dc40f,
+        type: 2}
+      propertyPath: m_Volume
+      value: 0.2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 583aa511f7a1a4695a2159e5318dc40f, type: 2}
   m_IsPrefabParent: 0
@@ -741,7 +757,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 4
+  m_Lightmapping: 1
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
@@ -1006,6 +1022,11 @@ Prefab:
         type: 2}
       propertyPath: TargetCount
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 114749992509772694, guid: 5cfa16ea14ab64d60bda6f65b01bd13c,
+        type: 2}
+      propertyPath: timer
+      value: 61
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5cfa16ea14ab64d60bda6f65b01bd13c, type: 2}
