@@ -195,3 +195,4 @@ MonoBehaviour:
   powerUpTimer: 0.05
   isPowered: 0
   timerStarted: 0
+  playerVolocityBonus: 10
