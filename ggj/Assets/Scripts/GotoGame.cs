@@ -15,8 +15,14 @@ public class GotoGame : MonoBehaviour {
        if ( vidplay.GetComponent<VideoPlayer>().frame>10) { 
         if (vidplay.GetComponent<VideoPlayer>().isPlaying == false )
         {
-            Application.LoadLevel("StartScreen");
+        Application.LoadLevel("StartScreen");
         }
+
 	}
+
+       if (Input.anyKeyDown == true)
+        {
+        Application.LoadLevel("StartScreen");
+        }
     }
 }

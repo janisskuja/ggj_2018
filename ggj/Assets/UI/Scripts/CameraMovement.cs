@@ -37,7 +37,7 @@ public class CameraMovement : MonoBehaviour {
             
             speed1 = Random.Range(10.0f, 10.0f);
            
-            speed2 = Random.Range(0.0f, 10.0f);
+            speed2 = Random.Range(2.0f, 10.0f);
             
             speed3 = Random.Range(-1.0f, 1.0f);
 
