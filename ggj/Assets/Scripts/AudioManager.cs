@@ -113,8 +113,8 @@ public class AudioManager : MonoBehaviour {
 	}
 
 	public void Boom() {
-		HitSoundSource.GetComponent<AudioSource> ().clip = BoomSound;
-		HitSoundSource.GetComponent<AudioSource> ().Play();
+		PowerPickupSource.GetComponent<AudioSource> ().clip = BoomSound;
+		PowerPickupSource.GetComponent<AudioSource> ().Play();
 	}
 
 
